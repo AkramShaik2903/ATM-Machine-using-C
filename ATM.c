@@ -47,8 +47,7 @@ void withdraw()
     printf("\nEnter Amount To Withdraw : ");
     int draw;
     scanf("%d",&draw);
-    if(user1.balance>draw){
-      //user1.history=draw;
+    if(user1.balance>=draw){
       user1.balance-=draw;
       char transaction[50];
       sprintf(transaction, "Withdrawn: %d\n", draw);
